@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contacto">
+    <div class="pl-4 text-sm breadcrumbs">
+		<ul>
+		  <li><a href="/">Inicio</a></li> 
+          <li><a href="contact">Contacto</a></li> 
+		 
+		</ul>
+	  </div>
+	<main>
+		<div role="alert" class="alert alert-info ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span>No dudes en contactarnos para obtener acceso especial.</span>
+          </div>
+
+         
+
+
+          <!--  -->
+
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              
+              <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="form-control w-full max-w-xs">
+                        <div class="label">
+                          <span class="label-text">Nombre:</span>
+                        </div>
+                        <input type="text" placeholder="Joe Doe.." class="input input-bordered input-primary w-full max-w-xs" />
+            
+                        <div class="label">
+                            <span class="label-text">Correo:</span>
+                          </div>
+                          <input type="text" placeholder="algo@..." class="input input-bordered input-primary w-full max-w-xs" />
+                         
+                       
+                          <div class="label">
+                            <span class="label-text">Mensaje:</span>
+                          </div>
+                          <textarea class="textarea textarea-primary" placeholder="Me gustaria añadir ..."></textarea>             
+                      </label>
+            
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">olvidaste la contraseña?</a>
+                    </label>
+                  </div>
+                  <button class="btn btn-primary">Contactanos</button>
+
+                </form>
+              </div>
+            </div>
+
+			<div>
+				<p>O envianos un mensaje </p>
+
+				<div class="label">
+					<span class="label-text">Telefono: +52 123-343-123-1</span>
+				  </div>
+				  <div class="label">
+					<span class="label-text">correo electronico: jsExercise@gmail.com</span>
+
+				  </div>
+				  <div class="label">
+					<span class="label-text">Direccion: peubla,Puebla, Center City</span>
+
+				  </div>
+
+			</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>
